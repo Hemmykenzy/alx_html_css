@@ -1,0 +1,393 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+/* Header Section */
+header {
+  background: url('CSS Advanced/object.png') no-repeat center center/cover;
+  position: relative;
+  height: 100vh;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+Dark overlay
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* overlay */
+  z-index: 0;
+}
+
+/* Header content */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero content */
+.hero-content {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.hero-subnav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-subnav span {
+  color: white;
+  text-transform: uppercase;
+}
+
+.cta-button {
+  background-color: #C271FF;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+strong {
+  font-size: 20px;
+  color: #C271FF;
+}
+
+/* Quote Section (Profiles) */
+.profiles {
+  background-color: #071629;
+  padding: 60px 80px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.profile {
+  max-width: 200px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.profile h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #f2f2f2;
+}
+.quote-section {
+  background: linear-gradient(to right, #C271FF, #8E51DB);
+  padding: 80px 40px;
+  color: #ffffff;
+}
+
+.quote-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.quote-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-content {
+  max-width: 600px;
+}
+
+.quote-text {
+  font-size: 22px;
+  font-style:none;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.quote-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.quote-title {
+  font-style: normal;
+  font-size: 16px;
+  color: #d5bfff; /* light text on purple */
+}
+.videos-section {
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #222;
+  font-family: sans-serif;
+}
+
+.section-title .highlight {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+.video-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  background-color: white;
+  border-radius: 8px;
+  width: 220px;
+  padding: 0 0 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.video-thumbnail {
+  position: relative;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.video-title {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.video-desc {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.video-author span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333; /* or whatever your Figma shows */
+}
+
+
+.video-author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* circular image */
+  object-fit: cover;
+}
+
+
+.video-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #888;
+}
+
+.stars {
+  color: #C271FF;
+}
+
+.duration {
+  font-weight: bold;
+}
+
+.membership-section {
+  background: #071629;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.membership-section h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.membership-section h2 span {
+  color: #b86efb; /* purple-pink text for "membership" */
+}
+
+.membership-features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.feature-card {
+  flex: 1 1 200px;
+  padding: 20px;
+  color: #e0e0e0;
+}
+
+.feature-card img {
+  width: 40px;
+  margin-bottom: 15px;
+  filter: brightness(0) saturate(100%) invert(77%) sepia(26%) saturate(536%) hue-rotate(219deg) brightness(98%) contrast(88%);
+}
+
+.feature-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.register-btn {
+  background-color: #b86efb;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #a04fe4;
+}
+
+.faq-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.faq-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+.footer {
+  background-color: #0a0a23;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.footer-left i {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer-right a {
+  color: white;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.footer-right a:hover {
+  color: #aaa;
+}
